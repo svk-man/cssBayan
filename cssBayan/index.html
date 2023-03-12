@@ -5,8 +5,46 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Task: CSS Bayan</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>CSS Bayan</h1>
+	<header class="header">
+		<div class="container">
+			<h1>CSS Bayan</h1>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="accordeon">
+				<section class="section">
+					<input class="section__input" type="radio" name="mems" id="mem-1">
+					<label class="section__label" for="mem-1">
+						<div class="section__title-top">
+							<h2 class="section__title">You can't just copy and paste CSS</h2>
+							<img class="section__icon" src="images/svg/plus-solid.svg" alt="Show mem">
+							<img class="section__icon" src="images/svg/xmark-solid.svg" alt="Close mem">
+						</div>
+						<div class="section__content">
+							<img src="https://picsum.photos/536/354" alt="You can't just copy and paste CSS" class="section__image">
+						</div>
+					</label>
+				</section>
+				<section class="section">
+					<input class="section__input" checked type="radio" name="mems" id="mem-2">
+					<label class="section__label" for="mem-2">
+						<div class="section__title-top">
+							<h2 class="section__title">Keep calm and carry on</h2>
+							<img class="section__icon" src="images/svg/plus-solid.svg" alt="Show mem">
+							<img class="section__icon" src="images/svg/xmark-solid.svg" alt="Close mem">
+						</div>
+						<div class="section__content">
+							<img src="https://picsum.photos/536/353" alt="Keep calm and carry on" class="section__image">
+						</div>
+					</label>
+				</section>
+			</div>
+		</div>
+	</main>
 </body>
 </html>

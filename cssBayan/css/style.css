@@ -1,0 +1,88 @@
+.container {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.section__input {
+	display: none;
+}
+
+.section__label {
+	display: inline-block;
+	width: 100%;
+	border-top: 1px solid gray;
+}
+
+.section__title-top {
+	display: flex;
+	align-items: center;
+}
+
+.section__title {
+	flex-grow: 1;
+}
+
+.section__icon {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	transition: opacity .5s linear;
+}
+
+.section__content {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	transition: all .3s linear;
+}
+
+.section__image {
+	width: 300px;
+	height: 300px;
+	opacity: 0;
+	transition: all .3s linear;
+}
+
+.accordeon:hover {
+	cursor: pointer;
+}
+
+.accordeon:hover .section__label {
+	cursor: pointer;
+}
+
+.accordeon:hover .section__icon:nth-child(2) {
+	visibility: visible;
+}
+
+.section__label:hover .section__content,
+.section__input:checked + .section__label .section__content {
+	visibility: visible;
+	width: auto;
+	height: 300px;
+}
+
+.section__label:hover .section__image,
+.section__input:checked + .section__label .section__image {
+	opacity: 1;
+}
+
+.section__input:checked + .section__label .section__icon:nth-child(2),
+.section__input:not(checked) + .section__label:hover .section__icon:nth-child(2) {
+	visibility: hidden;
+}
+
+.section__icon:nth-child(2),
+.section__input:checked + .section__label .section__icon:nth-child(3),
+.section__input:not(checked) + .section__label:hover .section__icon:nth-child(3) {
+	visibility: visible;
+	width: 30px;
+	height: 30px;
+	opacity: 1;
+}
+
+
+}
