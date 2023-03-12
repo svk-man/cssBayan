@@ -113,9 +113,9 @@ body {
 	}
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1280px) {
 	body {
-		font-size: 1.4em;
+		font-size: 1.6em;
 	}
 
 	.container {
@@ -129,7 +129,19 @@ body {
 	}
  }
 
- @media (max-width: 960px) {
+@media (max-width: 960px) {
+	body {
+		font-size: 1.4em;
+	}
+
+	.section__label:hover .section__content,
+	.section__input:checked + .section__label .section__content {
+		width: 70%;
+		height: 70%;
+	}
+ }
+
+ @media (max-width: 480px) {
 	body {
 		font-size: 1.2em;
 	}
